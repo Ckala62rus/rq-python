@@ -8,5 +8,18 @@ rq worker --config rq_conf
 rq worker high default low --config rq_conf 
 ```
 
-# Создание requirements.txt экспорта зависимостей без хэшей
+#### Create requirements.txt dependences without hashes
+```bash
 poetry export --without-hashes -f requirements.txt --output requirements.txt  
+```
+
+
+#### Download all packages for local install
+```bash
+pip download -d vendor -r requirements.txt
+```
+
+#### Install all packages localhost from folder
+```bash
+pip install --no-index --find-links /vendor -r requirements.txt
+```

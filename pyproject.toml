@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rq-python-example"
+version = "0.1.0"
+description = ""
+authors = ["Ckala62rus <agr.akyla@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+httpx = "^0.28.1"
+rq = "^2.1.0"
+redis = "^5.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
